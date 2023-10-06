@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de arte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="Monet.js"></script>
+    <script src="Cezanne.js"></script>
+    <script src="Vangogh.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#sobre">Contato</a>
+            <a href="#monet">Monet</a>
+            <a href="#cezanne">Paul Cézane</a>
+            <a href="#vangogh">Van Gogh</a>
+            </nav>
+    </header>
+    <div id="bemvindo">
+        <h1 class="title">Galeria de arte Impressionista e Pós-impressionista</h1>
+        <p>Bem vindo a galeria, aqui você irá conhecer um pouco da história dos artistas Claude Monet, Paul Cézanne e Vincent
+            van Gogh, bem como algumas de suas obras de arte.</p>
+    </div>
+<!--Monet-->
+    <div>
+         <div class="sobre_artista" id="monet">
+            <img class="retrato_artista" src="Imagens/Monet/Claude monet.jpg" alt="Retrato de Claude Monet">
+            <div>
+                <h2 class="title">Claude Monet</h2>
+                 <p>Claude Monet foi um famoso pintor francês do movimento impressionista. Ele é conhecido por suas pinturas de
+                        paisagens, cenas ao ar livre e paisagens aquáticas, enfatizando a luz, a cor e os efeitos atmosféricos. Monet é
+                        famoso por suas séries de pinturas, como as de nenúfares em seu jardim em Giverny. Suas obras mais conhecidas
+                        incluem "Impressão, Nascer do Sol" e "Mulher com um Guarda-Sol". Ele teve um impacto duradouro na arte moderna e é
+                        lembrado como um dos mestres do impressionismo.</p>
+            </div>
+        </div>
+    </div>
+
+    <p class="title">Obras de arte de Claude Monet:</p>
+
+    <div id="galery_container">
+        <div class="galeria">
+            <button class="galery_btn" onclick="mudarFotoMonet(-1)">&#10094;</button>
+            <div class="imagem_monet">
+                <img class="img_monet" src="Imagens/Monet.png" alt="Galeria com obras de Monet">
+            </div>
+            <button class="galery_btn" onclick="mudarFotoMonet(1)">&#10095;</button>
+        </div>
+        <p id="nomeObra"></p>
+    </div>
+</div>
+<!--END-->
+<!--Cezanne-->
+<div>
+    <div class="sobre_artista" id="cezanne">
+        <img class="retrato_artista" src="Imagens/Paul Cézanne/Paulo Cezanne.jpg" alt="Retrato de Paul Cezanne">
+        <div>    
+            <h2 class="title">Paul Cezanne</h2>
+            <p>
+                    Paul Cézanne foi um influente pintor francês do século XIX, precursor do pós-impressionismo. Ele inovou na representação
+                    de formas e estruturas na pintura, influenciando o cubismo, e seu trabalho é conhecido por representar paisagens e
+                    natureza morta de forma única, desafiando convenções artísticas. Seu legado é duradouro na arte moderna.</p>
+        </div>
+    </div>
+
+    <p class="title">Obras de arte de Paul Cézanne:</p>
+
+    <div id="galery_container">
+        <div class="galeria">
+            <button class="galery_btn" onclick="mudarFotoCezanne(-1)">&#10094;</button>
+            <div class="imagem_cezanne">
+                <img class="img_cezanne" src="Imagens/Cezanne.png" alt="Galeria com obras de Cezanne">
+            </div>
+            <button class="galery_btn" onclick="mudarFotoCezanne(1)">&#10095;</button>
+        </div>
+        <p id="nomeObra"></p>
+    </div>
+</div>
+<!--Van Gogh-->
+<div>
+    <h2 class="title">Vincent van Gogh</h2>
+    <div class="sobre_artista" id="vangogh">
+        <img class="retrato_artista" src="Imagens/Van gogh/van gogh.jpg" alt="Retrato de Claude Monet">
+        <p>Vincent van Gogh foi um pintor holandês do século XIX conhecido por sua influência na arte pós-impressionista. Ele é
+            famoso por suas pinturas vibrantes e emocionais, como "Noite Estrelada" e "Girassóis". Van Gogh lutou contra
+            problemas de saúde mental ao longo de sua vida e morreu tragicamente aos 37 anos. Apesar de não ter alcançado
+            reconhecimento em vida, suas obras são agora altamente valorizadas e ele é considerado um dos maiores artistas da
+            história da arte ocidental.</p>
+    </div>
+
+    <p class="title">Obras de arte de Vincent van Gogh:</p>
+
+    <div id="galery_container">
+        <div class="galeria">
+            <button class="galery_btn" onclick="mudarFotoVanGogh(-1)">&#10094;</button>
+            <div class="imagem_gogh">
+                <img class="img_gogh" src="Imagens/Vangogh.png" alt="Galeria com obras de Van Gogh">
+            </div>
+            <button class="galery_btn" onclick="mudarFotoVanGogh(1)">&#10095;</button>
+        </div>
+        <p id="nomeObra"></p>
+    </div>
+</div>
+<!--END-->
+
+<footer id="sobre">
+<p>Autor: Isabella Costa Farias</p>
+<p>Contato: isabellacostaacademico@gmail.com</p>
+<p>Referências: <a href="https://themuseum.blog/pt/obras-artisticas/">https://themuseum.blog/pt/obras-artisticas/</a> <a href="https://www.todamateria.com.br/paul-cezanne/"> https://www.todamateria.com.br/paul-cezanne/</a></p>
+<a href="https://github.com/BellCosta" target="_blank"><img id="icon" src="Imagens/githubicon.png" alt="Ícone github"></a>
+</footer>
+    
+</body>
+</html>

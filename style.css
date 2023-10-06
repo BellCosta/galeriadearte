@@ -1,0 +1,154 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2% 10% auto 10%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+nav{
+    display: flex;
+    text-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+nav a{
+    text-decoration: none;  
+    color: #000000;
+    font-size: 1.5em;
+    transition: 0.3s ease-in-out;
+     
+}
+
+#bemvindo p{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#bemvindo h1{
+    padding-top: 2%;
+}
+
+.retrato_artista{
+    border-radius: 400px;
+    padding: 5%;
+
+}
+
+.artista_container h2{
+    padding-top: 2%;
+}
+
+.sobre_artista{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 2%;
+    
+    
+}
+
+.sobre_artista p{
+    padding: 0 5% 5% 5%;
+    font-size: 1.3em;
+    
+}
+
+.title{
+    font-size: 2em;
+    text-align: center;
+    
+}
+
+nav a:hover {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.galeria{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+
+.galery_btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 120px;
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+footer{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 20px;
+}
+
+footer p a{
+    padding: 0.2%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer img{
+    padding-bottom: 0.7%;
+}
+#icon{
+    width: 3%;
+}
+
+@media (max-width: 768px){
+
+    body{
+        margin: 0.5%;
+    }
+
+    header{
+        font-size: 0.5em;
+        justify-items: auto;
+    }
+
+    .sobre_artista{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .retrato_artista{
+        width: 50%;
+    }
+
+    .galeria{
+        size: 0.2%;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .imagem_responsiva{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .galeria img{
+        max-width: 100%;
+        height: auto;
+        padding-top: 2%;
+    }
+
+    #icon{
+        width: 15%;
+    }
+}
